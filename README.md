@@ -10,9 +10,10 @@ To address this problem, we are specifically focussing on generating maps from t
 <br>
 The dataset containing satellite image of cities obtained via web scraping from Google Maps was available publically (http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/) provided by UC Berkeley’s Electrical and Computer Science Dept. The data is available as a concatenated form of satellite and map images. <br><br>
 The details of the dataset are as follows: <br>
-* Number images in dataset (train + validation): 2194 <br>
-* Size of each combined image (the satellite and the map image) in dataset: 1200 x 600 so that means each image (map or satellite image) is of size 600 x 600. <br>
-* Size of complete dataset: 257.7 MB
+<ul>
+<li> Number images in dataset (train + validation): 2194 </li>
+<li> Size of each combined image (the satellite and the map image) in dataset: 1200 x 600 so that means each image (map or satellite image) is of size 600 x 600. </li>
+<li> Size of complete dataset: 257.7 MB </li>
 <br>
 
 ## Preprocessing Techniques 
