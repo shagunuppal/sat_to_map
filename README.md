@@ -8,7 +8,7 @@ To address this problem, we are specifically focussing on generating maps from t
 
 ## Data Acquisition 
 <br>
-The dataset containing satellite image of cities obtained via web scraping from Google Maps was available publically (http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/) provided by UC Berkeley’s Electrical and Computer Science Dept. The data is available as a concatenated form of satellite and map images. <br><br>
+The dataset containing satellite image of cities obtained via web scraping from Google Maps was available publically provided by UC Berkeley’s Electrical and Computer Science Dept. The data is available as a concatenated form of satellite and map images. <br><br>
 The details of the dataset are as follows: <br>
 <ul>
 <li> Number images in dataset (train + validation): 2194 </li>
@@ -16,6 +16,8 @@ The details of the dataset are as follows: <br>
 <li> Size of complete dataset: 257.7 MB </li>
 </ul>
 <br>
+
+<a href="http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/">Link to Dataset</a>
 
 ## Preprocessing Techniques 
 <br>
