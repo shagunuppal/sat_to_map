@@ -14,6 +14,7 @@ The details of the dataset are as follows: <br>
 <li> Number images in dataset (train + validation): 2194 </li>
 <li> Size of each combined image (the satellite and the map image) in dataset: 1200 x 600 so that means each image (map or satellite image) is of size 600 x 600. </li>
 <li> Size of complete dataset: 257.7 MB </li>
+</ul>
 <br>
 
 ## Preprocessing Techniques 
@@ -24,9 +25,11 @@ The fact that the images are coupled together, requires us to seperate the two i
 # Learning Techniques 
 <br>
 We intend to compare the performance on the task of map generation from a given satellite image on a trivial neural network as well as simple and compound generative models that include the following: <br>
-1. Convolutional Neural Network (CNN) : </b> This is a simple neural network consisting of convolution layers. CNNs learn on the basis of learning the loss function to enhance the quality of the results, the loss function being manually defined as per the task taken into consideration. <br>
-2. Variational Autoencoder (VAE) : </b> This is an autoencoder consisting of an encoder and decoder and a gaussian prior imposed on the latent space. The training approach is based on reducing the reconstruction loss between the predicted and ground truth images. <br>
-3. Generative Adversarial Network (GAN) : </b> This is a complex model consisting of a generator capable of producing fake data samples (images in our case) and a discriminator whose job is to differentiate between the real and the fake samples. The learning is influenced by the min-max tradeoff between the generator and the discriminator. <br>
+<ul>
+<li> Convolutional Neural Network (CNN) : </b> This is a simple neural network consisting of convolution layers. CNNs learn on the basis of learning the loss function to enhance the quality of the results, the loss function being manually defined as per the task taken into consideration. </li>
+<li> Variational Autoencoder (VAE) : </b> This is an autoencoder consisting of an encoder and decoder and a gaussian prior imposed on the latent space. The training approach is based on reducing the reconstruction loss between the predicted and ground truth images. </li>
+<li> Generative Adversarial Network (GAN) : </b> This is a complex model consisting of a generator capable of producing fake data samples (images in our case) and a discriminator whose job is to differentiate between the real and the fake samples. The learning is influenced by the min-max tradeoff between the generator and the discriminator. </li>
+</ul>
 <br>
 
 ## Startegy for Model Selection 
