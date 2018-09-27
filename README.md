@@ -24,7 +24,7 @@ The details of the dataset are as follows: <br>
 The fact that the images are coupled together, requires us to seperate the two images of each scene by simply cropping to retrieve the satellite image as our training datapoint and the corresponding map images becomes the ground truth data for the same, required for computing the loss between our predicted and the desired images.
 <br>
 
-# Learning Techniques 
+## Learning Techniques 
 <br>
 We intend to compare the performance on the task of map generation from a given satellite image on a trivial neural network as well as simple and compound generative models that include the following: <br>
 <ul>
