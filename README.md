@@ -34,11 +34,6 @@ We intend to compare the performance on the task of map generation from a given 
 </ul>
 <br>
 
-## Strategy for Model Selection 
-<br>
-We select kernel based approach to use convolution filters. Also, in the neural network architecture, both linear and non-linear approaches are also embedded within in the form of fully connected components as well as activation layers while training models like the VAE. <br>
-In order to tune the hyperparameters like learning rate and gradient descent approaches, we use the holdout technique. Based on the different values of the hyperparameters and hence, different configurations of the model, we compare the different evaluation metrics and choose the one which guarantees the highest performance measure. 
-<br>
 
 ## Training Approaches 
 <br>
