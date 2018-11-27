@@ -229,7 +229,6 @@ def train(batchsize):
 			reconstructed, mu, sigma = model(img)
 			loss = loss_function(reconstructed, map_img, mu, sigma)
 			loss.backward()
-			train_loss += loss.data[0]
 			optimizer.step()
 			if(i%100==0):
 				print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
@@ -239,7 +238,7 @@ def train(batchsize):
 					100. * i / len_train,
 					loss.data[0] / len(img)))
 		print('====> Epoch: {} Average loss: {:.4f}'.format(
-			epoch, train_loss / len_train))
+			epoch, loss.data[0] / len_train))
 		if epoch % 10 == 0:
 			ground_truth_img = to_img(img.cpu().data)
 			ground_truth_map = to_img(map_img.cpu().data)

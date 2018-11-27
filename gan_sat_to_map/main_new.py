@@ -123,7 +123,7 @@ def train():
             # fake
             G_fake = generator(img_1)
             D_fake = discriminator(img_1, G_fake.detach())
-            D_loss_fake = loss(D_real, ones_label) #loss(D_fake, zeros_label)
+            D_loss_fake = loss(D_fake, zeros_label) #loss(D_real, ones_label)
             D_x_gx = D_fake.data.mean()
 
             D_loss = D_loss_real + D_loss_fake

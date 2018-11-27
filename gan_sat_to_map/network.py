@@ -96,7 +96,6 @@ class Decoder(nn.Module):
 	def forward(self, nc_latent_space):
 		nc_latent_space = self.relu(self.common_factor(nc_latent_space))
 
-		#x = torch.cat((nv_latent_space, nc_latent_space), dim=1)
 		x = x.view(x.size(0), 512, 2, 2)
 		x = self.deconv_model(x)
 
