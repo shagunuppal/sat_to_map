@@ -1,13 +1,11 @@
-# Sat_to_Map
+# Sat2Map
 
-## Motivation of the problem statement
-<br>
+### Motivation of the problem statement
 Learning mappings from one image to another has been a problem of great interest since recent times in the field of image analysis, computer vision and learning models. With this project, we aim to develop an image-to-image learning model, which will be able to synthesise a given image representation to any other target scene representation.  
 <br><br>
 To address this problem, we are specifically focussing on generating maps from the corresponding satellite images for cities. Such kind of a problem seeks great attention as well as application in real life situations for the purpose of navigation and generating city maps. The dataset to be used for the same consists of satellite images of cities along with their corresponding generated maps as the ground truth. <br>
 
-## Data Acquisition 
-<br>
+### Data Acquisition 
 The dataset containing satellite image of cities obtained via web scraping from Google Maps was available publically provided by UC Berkeley’s Electrical and Computer Science Dept. The data is available as a concatenated form of satellite and map images. <br><br>
 The details of the dataset are as follows: <br>
 <ul>
@@ -19,12 +17,12 @@ The details of the dataset are as follows: <br>
 
 <a href="http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/">Link to Dataset</a>
 
-## Preprocessing Techniques 
+### Preprocessing Techniques 
 <br>
 The fact that the images are coupled together, requires us to seperate the two images of each scene by simply cropping to retrieve the satellite image as our training datapoint and the corresponding map images becomes the ground truth data for the same, required for computing the loss between our predicted and the desired images.
 <br>
 
-## Learning Techniques 
+### Learning Techniques 
 <br>
 We intend to compare the performance on the task of map generation from a given satellite image on a trivial neural network as well as simple and compound generative models that include the following: <br>
 <ul>
@@ -35,13 +33,13 @@ We intend to compare the performance on the task of map generation from a given 
 <br>
 
 
-## Training Approaches 
+### Training Approaches 
 <br>
 For the task of training a VAE and a CNN, we propose to use a Stochastic Gradient Descent which is relatively faster than the Batch Gradient Descent. <br>
 We intend to explore and compare the performance of two different types of gradient descent approaches - Batch GD and Stochastic GD for training our models on GANs. We iteratively alternate between one gradient descent step on the discriminator to one on the generator so as to minimise the loss between the ground truth image and the output image of the network. We intend to use Adam’s optimiser for mini-batch gradient descent with appropriate learning rates and momentum parameters.
 <br>
 
-## Evaluation Metrics 
+### Evaluation Metrics 
 <br>
 In order to estimate an evaluation metric for all the three CNN, VAE and GAN based approaches, we consider taking the euclidean pixel to pixel difference between the ground truth and the predicted image as the desired measure. However, for the GAN based approach, the idea is not only to get the predicted synthesised image closer to the ground truth image but also at the same time generated the predicted image no far from reality. <br> 
 So, in order to cover up this high-level goal of “real v/s fake” to make the output more genuine to human vision and observation, we aim to conduct a user survey. For each person appearing for the survey, he is shown a set of images, each for a time duration of 1 second and then given enough time to classify it as a real or a fake image. After certain such trials, he is given some feedback accordingly. When evaluating the final performance, the evaluator is given real and fake images corresponding to different set of inputs in order to maintain the complication of the task.
