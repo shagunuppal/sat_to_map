@@ -1,5 +1,8 @@
 # Sat2Map: Generating Maps from Satellite Images
 
+Reference-style: 
+![gan][gan]
+
 Learning mappings from one image to another has been a problem of great interest since recent times in the field of image analysis, computer vision and learning models. With this project, we aim to develop an image-to-image learning model, which will be able to synthesise a given image representation to any other target scene representation.  <br>
 To address this problem, we are specifically focussing on generating maps from the corresponding satellite images for cities. Such kind of a problem seeks great attention as well as application in real life situations for the purpose of navigation and generating city maps. The dataset to be used for the same consists of satellite images of cities along with their corresponding generated maps as the ground truth. 
 
