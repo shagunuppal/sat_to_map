@@ -1,6 +1,5 @@
 # Sat2Map: Generating Maps from Satellite Images
 
-Reference-style: 
 ![GAN Training](gan.gif)
 
 Learning mappings from one image to another has been a problem of great interest since recent times in the field of image analysis, computer vision and learning models. With this project, we aim to develop an image-to-image learning model, which will be able to synthesise a given image representation to any other target scene representation.  <br>
