@@ -27,4 +27,5 @@ In order to estimate an evaluation metric for all the three CNN, VAE and GAN bas
 In order to cover up this high-level goal of “real v/s fake” to make the output more genuine to human vision and observation, we aim to conduct a user survey. For each person appearing for the survey, he is shown a set of images, each for a time duration of 1 second and then given enough time to classify it as a real or a fake image. After certain such trials, he is given some feedback accordingly. When evaluating the final performance, the evaluator is given real and fake images corresponding to different set of inputs in order to maintain the complication of the task.
 <br>
 Both these evaluation metrics help us in finally commenting on the performance of various techniques and algorithms implemented in order to tackle the problem of consideration.
-
+<br><br>
+Work done by Shagun Uppal and Sarthak Bhagat as a part of Machine Learning Course taken at IIIT-Delhi
