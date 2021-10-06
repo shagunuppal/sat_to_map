@@ -28,4 +28,6 @@ In order to cover up this high-level goal of “real v/s fake” to make the out
 <br>
 Both these evaluation metrics help us in finally commenting on the performance of various techniques and algorithms implemented in order to tackle the problem of consideration.
 <br><br>
+
+#### Contribution
 Work done by Shagun Uppal and Sarthak Bhagat as a part of Machine Learning Course taken at IIIT-Delhi
