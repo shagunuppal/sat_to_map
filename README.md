@@ -30,4 +30,4 @@ Both these evaluation metrics help us in finally commenting on the performance o
 <br><br>
 
 #### Contribution
-Work done by Shagun Uppal and Sarthak Bhagat as a part of Machine Learning Course taken at IIIT-Delhi taught by Dr. Saket Anand.
+Project done by Shagun Uppal and Sarthak Bhagat as a part of Machine Learning Course taken at IIIT-Delhi taught by Dr. Saket Anand.
